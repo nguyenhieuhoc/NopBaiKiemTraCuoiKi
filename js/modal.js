@@ -5,19 +5,19 @@ $(document).ready(function(){
     })
     function kiemtrama() {
         let maukt = /^[0-9]{10}$/;
-        let chuoi = $("#txtMASV").val();
+        let chuoi = $("#txtMaSV").val();
         if (chuoi == "") {
-          $("#tbMASV").html("Bắt buộc nhập");
+          $("#tbMa").html("Bắt buộc nhập");
           return false;
         } else if (!maukt.test(chuoi)) {
-          $("#tbMASV").html("Nhập sai, chỉ dùng 10 chữ số");
+          $("#tbMa").html("Nhập sai, chỉ dùng 10 chữ số");
           return false;
         } else {
-          $("#tbMASV").html("*");
+          $("#tbMa").html("*");
           return true;
         }
       }
-      $("#txtMASV").blur(kiemtrama);
+      $("#txtMaSV").blur(kiemtrama);
     
      // Kiểm tra họ tên
     function kiemtrahoten() {
